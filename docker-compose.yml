@@ -1,12 +1,10 @@
-version: "3.9"
+version: "3"
 services:
   backstage:
     image: node:14
     volumes:
       - ./backstageapp:/backstageapp
+      - ./app-config.yaml:/backstageapp/app-config.yaml
     working_dir: /backstageapp/
     command: yarn dev
-    ports:
-      - 3000
-      - 7000
     network_mode: host
