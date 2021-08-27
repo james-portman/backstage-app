@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  backstage:
+    image: node:14
+    volumes:
+      - ./backstageapp:/backstageapp
+    working_dir: /backstageapp/
+    command: yarn dev
+    ports:
+      - 3000
+      - 7000
+    network_mode: host
