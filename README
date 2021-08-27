@@ -3,12 +3,13 @@ initial setup:
 run manually
 docker run --rm -i -t -v `pwd`:/local node:14 /bin/bash
 then
+cd /local
 npx @backstage/create-app
 then exit
 
+Enf of the install says:
 
- All set! Now you might want to:
-  Run the app: cd backstageapp && yarn dev
-  Set up the software catalog: https://backstage.io/docs/features/software-catalog/configuration
-  Add authentication: https://backstage.io/docs/auth/
-
+All set! Now you might want to:
+Run the app: cd backstageapp && yarn dev
+Set up the software catalog: https://backstage.io/docs/features/software-catalog/configuration
+Add authentication: https://backstage.io/docs/auth/
