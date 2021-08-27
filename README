@@ -13,3 +13,6 @@ All set! Now you might want to:
 Run the app: cd backstageapp && yarn dev
 Set up the software catalog: https://backstage.io/docs/features/software-catalog/configuration
 Add authentication: https://backstage.io/docs/auth/
+
+Then run it with:
+docker-compose up
