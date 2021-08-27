@@ -4,7 +4,6 @@ services:
     image: node:14
     volumes:
       - ./backstageapp:/backstageapp
-      - ./app-config.yaml:/backstageapp/app-config.yaml
     working_dir: /backstageapp/
-    command: yarn dev
+    command: bash run.sh
     network_mode: host
