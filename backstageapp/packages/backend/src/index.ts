@@ -5,7 +5,7 @@
  *
  * Happy hacking!
  */
-
+import 'global-agent/bootstrap';
 import Router from 'express-promise-router';
 import {
   createServiceBuilder,
